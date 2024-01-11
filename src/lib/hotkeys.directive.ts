@@ -4,12 +4,15 @@ import { HotkeysService } from './hotkeys.service';
 import { MousetrapInstance } from 'mousetrap';
 import * as Mousetrap from 'mousetrap';
 
+type HotkeyMap = { [combo: string]: (event: KeyboardEvent, combo: string) => ExtendedKeyboardEvent }[];
+
 @Directive({
     selector: '[hotkeys]',
     providers: [HotkeysService]
 })
 export class HotkeysDirective implements OnInit, OnDestroy {
-    @Input() hotkeys: { [combo: string]: (event: KeyboardEvent, combo: string) => ExtendedKeyboardEvent }[];
+    @Input()
+    hotkeys: HotkeyMap = [];
 
     private mousetrap: MousetrapInstance;
     private hotkeysList: Hotkey[] = [];
