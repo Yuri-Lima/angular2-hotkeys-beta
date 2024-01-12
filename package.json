@@ -1,6 +1,6 @@
 {
-  "name": "angular2-hotkeys",
-  "version": "16.0.1",
+  "name": "angular2-hotkeys-v17",
+  "version": "17.0.9",
   "scripts": {
     "build": "ng build angular2-hotkeys",
     "build:release": "ng build angular2-hotkeys --configuration production",
@@ -15,11 +15,15 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:brtnshrdr/angular2-hotkeys.git"
+    "url": "git@github.com:Yuri-Lima/angular2-hotkeys-beta.git"
   },
   "author": {
     "name": "Nick Richardson",
     "email": "nick.richardson@mediapixeldesign.com"
+  },
+  "contributes": {
+    "name": "Yuri Lima",
+    "email": "y.m.lima19@gmail.com"
   },
   "keywords": [
     "angular",
